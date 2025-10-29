@@ -149,19 +149,30 @@ export default function Home() {
         {/* Header */}
         <header className="flex items-center justify-between py-8">
           {/* Logo */}
-          <div className="relative">
-            <p
-              className="absolute blur-[3.5px] font-semibold text-[27.629px] text-[rgba(224,228,233,0.4)] whitespace-nowrap"
-              style={{ fontFamily: "var(--font-instrument-sans)" }}
-            >
-              Lunar Labs
-            </p>
-            <p
-              className="relative blur-[0.25px] font-semibold text-[27.629px] text-[#e0e4e9] whitespace-nowrap"
-              style={{ fontFamily: "var(--font-instrument-sans)" }}
-            >
-              Lunar Labs
-            </p>
+          <div className="flex items-center gap-3">
+            {/* Logo Icon */}
+            <div className="relative w-[42px] h-[42px]">
+              <div className="absolute inset-0 rounded-full bg-white opacity-10 blur-md"></div>
+              <div className="relative w-full h-full rounded-full border-2 border-[rgba(224,228,233,0.4)] flex items-center justify-center bg-[rgba(224,228,233,0.05)]">
+                <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#e0e4e9] to-transparent opacity-80"></div>
+              </div>
+            </div>
+
+            {/* Logo Text */}
+            <div className="relative">
+              <p
+                className="absolute blur-[3.5px] font-semibold text-[27.629px] text-[rgba(224,228,233,0.4)] whitespace-nowrap"
+                style={{ fontFamily: "var(--font-instrument-sans)" }}
+              >
+                Lunar Labs
+              </p>
+              <p
+                className="relative blur-[0.25px] font-semibold text-[27.629px] text-[#e0e4e9] whitespace-nowrap drop-shadow-[0_0_8px_rgba(224,228,233,0.5)]"
+                style={{ fontFamily: "var(--font-instrument-sans)" }}
+              >
+                Lunar Labs
+              </p>
+            </div>
           </div>
 
           {/* Navigation */}
@@ -219,7 +230,8 @@ export default function Home() {
         {/* Project Cards */}
         <section className="grid grid-cols-2 gap-8 pb-20">
           {/* Moonwell Card */}
-          <div className="relative bg-[rgba(30,32,35,0.5)] border border-[#d4deed] rounded-[12px] p-8 h-[412px]">
+          <div className="relative rounded-[12px] p-[1px] bg-gradient-to-br from-[#d4deed] via-[#d4deed] to-transparent h-[412px]">
+            <div className="relative bg-[rgba(30,32,35,0.95)] backdrop-blur-sm rounded-[11px] p-8 h-full">
             <p
               className="font-medium text-[#777e84] text-[16px] mb-6 tracking-widest"
               style={{ fontFamily: "var(--font-dm-mono)" }}
@@ -238,13 +250,25 @@ export default function Home() {
             </div>
 
             <p
-              className="font-medium text-[#e0e4e9] text-[23px] leading-normal opacity-80 mb-12 max-w-[384px]"
+              className="font-medium text-[#e0e4e9] text-[23px] leading-normal opacity-80 mb-8 max-w-[384px]"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               Lend, borrow and earn yield with confidence
             </p>
 
-            <div className="flex gap-16 mb-4">
+            {/* Project Badge */}
+            <div className="inline-block rounded-[12px] p-[1px] bg-gradient-to-r from-[#fda81d] via-[#8b6914] to-[#3a3a3a] mb-6">
+              <div className="bg-[#282a2d] rounded-[11px] px-3 py-2">
+                <p
+                  className="blur-[0.1px] font-medium text-[#fda81d] text-[20px] uppercase tracking-wider"
+                  style={{ fontFamily: "var(--font-instrument-sans)" }}
+                >
+                  MOONWELL
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-16">
               <div>
                 <p
                   className="font-medium text-[#777e84] text-[16px] mb-2"
@@ -275,20 +299,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            {/* Project Badge */}
-            <div className="absolute bottom-8 left-8 bg-[#282a2d] border border-black rounded-[12px] px-3 py-2">
-              <p
-                className="blur-[0.1px] font-medium text-[#fda81d] text-[20px] uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-instrument-sans)" }}
-              >
-                MOONWELL
-              </p>
             </div>
           </div>
 
           {/* MAMO.bot Card */}
-          <div className="relative bg-[rgba(30,32,35,0.5)] border border-[#d4deed] rounded-[12px] p-8 h-[412px]">
+          <div className="relative rounded-[12px] p-[1px] bg-gradient-to-br from-[#d4deed] via-[#d4deed] to-transparent h-[412px]">
+            <div className="relative bg-[rgba(30,32,35,0.95)] backdrop-blur-sm rounded-[11px] p-8 h-full">
             <p
               className="font-medium text-[#777e84] text-[16px] mb-6 tracking-widest"
               style={{ fontFamily: "var(--font-dm-mono)" }}
@@ -307,13 +323,25 @@ export default function Home() {
             </div>
 
             <p
-              className="font-medium text-[#e0e4e9] text-[23px] leading-normal opacity-80 mb-12 max-w-[384px]"
+              className="font-medium text-[#e0e4e9] text-[23px] leading-normal opacity-80 mb-8 max-w-[384px]"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               Simple, safe and automated way to earn interest with your money
             </p>
 
-            <div className="flex gap-16 mb-4">
+            {/* Project Badge */}
+            <div className="inline-block rounded-[12px] p-[1px] bg-gradient-to-r from-[#fda81d] via-[#8b6914] to-[#3a3a3a] mb-6">
+              <div className="bg-[#282a2d] rounded-[11px] px-3 py-2">
+                <p
+                  className="blur-[0.1px] font-medium text-[#fda81d] text-[20px] uppercase tracking-wider"
+                  style={{ fontFamily: "var(--font-instrument-sans)" }}
+                >
+                  MAMO.BOT
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-16">
               <div>
                 <p
                   className="font-medium text-[#777e84] text-[16px] mb-2"
@@ -344,15 +372,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            {/* Project Badge */}
-            <div className="absolute bottom-8 left-8 bg-[#282a2d] border border-black rounded-[12px] px-3 py-2">
-              <p
-                className="blur-[0.1px] font-medium text-[#fda81d] text-[20px] uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-instrument-sans)" }}
-              >
-                MAMO.bot
-              </p>
             </div>
           </div>
         </section>
