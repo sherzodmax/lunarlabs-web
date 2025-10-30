@@ -250,7 +250,7 @@ export default function Home() {
             </div>
 
             <p
-              className="font-medium text-[#e0e4e9] text-[23px] leading-normal opacity-80 mb-8 max-w-[384px]"
+              className="font-medium text-[#e0e4e9] text-[23px] leading-normal mb-8 max-w-[384px]"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               Lend, borrow and earn yield with confidence
@@ -323,7 +323,7 @@ export default function Home() {
             </div>
 
             <p
-              className="font-medium text-[#e0e4e9] text-[23px] leading-normal opacity-80 mb-8 max-w-[384px]"
+              className="font-medium text-[#e0e4e9] text-[23px] leading-normal mb-8 max-w-[384px]"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               Simple, safe and automated way to earn interest with your money
